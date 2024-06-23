@@ -2,37 +2,41 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: rgb(215, 230, 244);
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    background-color: #333;
-    color: #fff;
+    padding: 0.2rem;
+    background:rgb(224, 224, 222);
+    color: rgb(246, 245, 242);
+    
 }
 
 .logo a {
     text-decoration: none;
-    color: #fff;
+    color: #333;
     font-size: 1.5rem;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 2.3rem;
 }
 
 .nav-links li {
+    font-family: noto serif;
     display: inline;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
+    color: #2e2d2d;
+    font-size: 1.2rem;
+    font-weight: lighter;
 }
 
 .hamburger {
@@ -44,7 +48,7 @@ body {
 .hamburger span {
     height: 3px;
     width: 25px;
-    background: #fff;
+    background: #2e2d2d;
     margin: 4px;
     border-radius: 5px;
 }
@@ -69,3 +73,61 @@ body {
         display: flex;
     }
 }
+.logo img{
+    height: 70px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.logo a{
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+.background-image {
+    background-image: url('img/img4.png'); /* Replace with your image URL */
+    width: 100%; /* or specific width */
+    height: 700px; /* Adjust based on your needs */
+    background-size: cover; /* Cover the entire div */
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    color: rgb(0, 0, 0); /* Text color */
+    font-size: 55px; /* Text size */
+  }
+
+
+
+
+
+.feature-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px;
+  }
+  
+  .feature-text {
+    width: 50%;
+    font-size: 35px;
+    padding-left: 10%;
+    
+  }
+  
+  .feature-image img {
+    width: 70%;
+    padding-left: 20%;
+    
+    /* Adjust as necessary to fit the image properly */
+  }
+  #img5{
+    width: 65%;
+    padding-left: 25%;
+  }
+  #img6{
+    width:65%;
+    padding-left: 25%;
+  }
