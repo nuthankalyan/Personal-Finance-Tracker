@@ -10,12 +10,15 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0.2rem;
-    background:rgb(224, 224, 222);
+    background: rgb(237, 246, 255);
     color: rgb(246, 245, 242);
-    
+    box-shadow: 50px 50px 50px rgb(246, 245, 242);
 }
 
 .logo a {
+    font-family: "PT Serif", serif;
+  font-weight: 800;
+  font-style: italic;
     text-decoration: none;
     color: #333;
     font-size: 1.5rem;
@@ -28,17 +31,39 @@ body {
 }
 
 .nav-links li {
-    font-family: noto serif;
+    font-family: "PT Serif", serif;
+    font-weight: 800;
+    font-style:normal;
     display: inline;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #2e2d2d;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: lighter;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: black; /* Use the existing text color */
+    transition: color 0.3s;
 }
-
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    bottom: -5px; /* Distance from the bottom of the text */
+    left: 0;
+    background-color: #333; /* Color of the underline */
+    transition: width 0.3s; /* Smooth transition for the underline animation */
+}
+.nav-links a:hover::after {
+    width: 100%;
+}
+.nav-links a:hover {
+    color: #555; /* Optional: Change text color on hover */
+}
 .hamburger {
     display: none;
     flex-direction: column;
@@ -88,6 +113,9 @@ body {
 }
 
 .background-image {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
     background-image: url('img/img4.png'); /* Replace with your image URL */
     width: 100%; /* or specific width */
     height: 700px; /* Adjust based on your needs */
@@ -111,6 +139,9 @@ body {
   }
   
   .feature-text {
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-style: normal;
     width: 50%;
     font-size: 35px;
     padding-left: 10%;
